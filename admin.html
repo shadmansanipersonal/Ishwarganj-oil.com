@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Ishwarganjoil.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+<div class="logo">
+                <h2>Ishwarganj-oil.com</h2>
+            </div>
+            <ul class="nav-menu">
+<li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="scan.html">Scan</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="admin-page">
+        <div class="container">
+            <div class="admin-header glass-card">
+<h1>Admin Panel</h1>
+                <div class="admin-stats">
+                    <span class="stat-item">Total Users: <span id="admin-total-users">0</span></span>
+                    <span class="stat-item">Pending Fuel: <span id="admin-pending">0</span></span>
+                </div>
+            </div>
+
+            <div class="users-list glass-card">
+<h2>All Users</h2>
+                <div id="users-list" class="users-grid"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Receipt Modal -->
+    <div id="receipt-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <h2>Digital Fuel Receipt / ডিজিটাল ফুয়েল রশিদ</h2>
+            <div id="receipt-content"></div>
+            <button id="download-receipt" class="btn-primary">Download Receipt / রশিদ ডাউনলোড</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 All Rights Reserved | Developed by Shadman Sani</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

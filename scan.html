@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan - Ishwarganjoil.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+<div class="logo">
+                <h2>Ishwarganj-oil.com</h2>
+            </div>
+            <ul class="nav-menu">
+<li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="scan.html">Scan</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="scan-page">
+        <div class="container">
+            <div class="scan-hero glass-card">
+                <div class="scan-camera">
+                    <div class="camera-placeholder">
+                        <div class="scanner-animation"></div>
+                        <p>Point QR here / কিউআর এখানে ধরুন</p>
+                    </div>
+                </div>
+                <h1>QR Scan / কিউআর স্ক্যান</h1>
+                <p>Simulate scan or select user / সিমুলেট করুন বা ইউজার নির্বাচন করুন</p>
+                
+                <div class="scan-selector">
+                    <select id="user-select">
+                        <option value="">Select user to scan / স্ক্যান করার জন্য ইউজার নির্বাচন করুন</option>
+                    </select>
+                    <button id="scan-btn" class="btn-primary">Scan Selected / নির্বাচিত স্ক্যান করুন</button>
+                </div>
+            </div>
+
+            <div id="scan-result" class="scan-result glass-card" style="display: none;">
+                <h2>Scan Result / স্ক্যান ফলাফল</h2>
+                <div id="scanned-user-info"></div>
+                <div id="scan-status"></div>
+                <a id="scan-dashboard-link" href="#" class="btn-primary" style="display: none;">View Dashboard</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 All Rights Reserved | Developed by Shadman Sani</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="scan.js"></script>
+</body>
+</html>

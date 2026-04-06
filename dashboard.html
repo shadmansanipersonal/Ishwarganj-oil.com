@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Ishwarganjoil.com</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+<div class="logo">
+                <h2>Ishwarganj-oil.com</h2>
+            </div>
+            <ul class="nav-menu">
+<li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="scan.html">Scan</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard-page">
+        <div class="container">
+            <div class="user-header glass-card">
+<h1>My Dashboard</h1>
+                <div id="user-info" class="user-info-section">
+                    <p>Loading your info... / আপনার তথ্য লোড হচ্ছে...</p>
+                </div>
+            </div>
+
+            <div class="eligibility-section glass-card">
+                <h2>Status / স্ট্যাটাস</h2>
+                <div id="eligibility-status" class="status-badge">
+                    Checking eligibility...
+                </div>
+                <div id="countdown-timer" class="countdown"></div>
+                <p id="eligibility-message"></p>
+            </div>
+
+            <div class="history-section glass-card">
+                <h2>Fuel History / ফুয়েল ইতিহাস</h2>
+                <ul id="fuel-history"></ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 All Rights Reserved | Developed by Shadman Sani</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
